@@ -3,11 +3,11 @@ This shortcode allows you to add PDF file to your pages using browser native
 PDF renderer. Therefore, no additional Javascripts needed.
 
 # Installation
-Copy the `pdf.html` to your `layouts/shortcode/` website directory.
+Copy the `pdf.html` to your `layouts/shortcodes/` website directory.
 Or run follow commands from you website directory.
 Make a directory if not exist.
 ```
-mkdir -p layouts/shortcode
+mkdir -p layouts/shortcodes
 ```
 Download `pdf.html` file.
 ```
