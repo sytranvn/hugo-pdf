@@ -1,3 +1,8 @@
+---
+title: "Hugo PDF"
+
+---
+
 # hugo-pdf
 This shortcode allows you to add PDF file to your pages using browser native 
 PDF renderer. Therefore, no additional Javascripts needed.
@@ -19,14 +24,14 @@ wget https://raw.githubusercontent.com/sytranvn/hugo-pdf/master/pdf.html -O layo
 
 # Usage
 ```
-{{< pdf url="./path/to/example.pdf" >}}
+{{</* pdf url="./path/to/example.pdf" */>}}
 
 # Adjust size
-{{< pdf url="./path/to/example.pdf" width="100%" height="500px" >}}
+{{</* pdf url="./path/to/example.pdf" width="100%" height="500px" */>}}
 
 # Adjust zoom level and page
 
-{{< pdf url="./path/to/example.pdf#view=Fit&page=2" width="100%" height="500px" >}}
+{{</* pdf url="./path/to/example.pdf#view=Fit&page=2" width="100%" height="500px" */>}}
 ```
 
 You can also add parameters to url to customize PDF viewer.
