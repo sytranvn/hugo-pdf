@@ -1,6 +1,6 @@
 ---
 title: "Hugo PDF"
-
+git_repo: https://github.com/sytranvn/hugo-pdf
 ---
 
 # hugo-pdf
