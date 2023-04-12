@@ -1,0 +1,21 @@
+name = "Hugo PDF"
+license = "MIT"
+licenselink = "https://github.com/sytranvn/hugo-pdf/blob/master/LICENSE"
+description = "A simple PDF shortcode for Hugo"
+homepage = "https://github.com/sytranvn/hugo-pdf"
+tags = [
+  "blog",
+  "minimal",
+  "minimalist",
+  "simple",
+  "pdf",
+]
+features = [
+  "pdf",
+  "viewer",
+]
+min_version = "0.79.0"
+
+[author]
+name = "Sy Tran Dung"
+homepage = "https://sytranvn.dev"
