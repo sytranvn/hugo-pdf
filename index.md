@@ -30,17 +30,17 @@ git submodule add -f --name hugo-pdf https://github.com/sytranvn/hugo-pdf.git th
 
 # Usage
 ```
-{{< pdf url="./path/to/example.pdf" >}}
+{{</* pdf src="./path/to/example.pdf" */>}}
 
 # Adjust size
-{{< pdf url="./path/to/example.pdf" width="100%" height="500px" >}}
+{{</* pdf src="./path/to/example.pdf" width="100%" height="500px" */>}}
 
 # Adjust zoom level and page
 
-{{< pdf url="./path/to/example.pdf#view=Fit&page=2" width="100%" height="500px" >}}
+{{</* pdf src="./path/to/example.pdf#view=Fit&page=2" width="100%" height="500px" */>}}
 ```
 
-{{< pdf url="./landscape.pdf#view=Fit" width="100%" height="500px" >}} 
+{{< pdf src="landscape.pdf#view=Fit" width="100%" height="500px" >}} 
 
 You can also add parameters to url to customize PDF viewer.
 | Parameters  | Value  | Description  | Browser  |
