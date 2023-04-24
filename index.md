@@ -1,6 +1,9 @@
 ---
 title: "Hugo PDF"
 git_repo: https://github.com/sytranvn/hugo-pdf
+summary: "This shortcode allows you to add PDF file to your pages using browser native PDF renderer. Therefore, no additional Javascripts needed."
+
+
 ---
 
 # hugo-pdf
@@ -8,31 +11,36 @@ This shortcode allows you to add PDF file to your pages using browser native
 PDF renderer. Therefore, no additional Javascripts needed.
 
 # Installation
-Copy the `pdf.html` to your `layouts/shortcodes/` website directory.
-Or run follow commands from you website directory.
-Make a directory if not exist.
+## Option 1
+Copy the only `layouts/shortcodes/pdf.html` file to your `layouts/shortcodes/` website directory and you are good to go.
+
+## Option 2
+Or use this as a theme.
+- add this to your `config.toml` theme
+```yml
+theme = "hugo-pdf"
+# use with existing theme
+theme = [current-theme,hugo-pdf]
 ```
-mkdir -p layouts/shortcodes
+- And clone this repo to your theme directory as submodule.
+```shell
+git submodule add -f --name hugo-pdf https://github.com/sytranvn/hugo-pdf.git themes/hugo-pdf
 ```
-Download `pdf.html` file.
-```
-# using curl
-curl -o layouts/shortcodes/pdf.html https://raw.githubusercontent.com/sytranvn/hugo-pdf/master/pdf.html
-# or wget
-wget https://raw.githubusercontent.com/sytranvn/hugo-pdf/master/pdf.html -O layouts/shortcodes/pdf.html 
-```
+
 
 # Usage
 ```
-{{</* pdf url="./path/to/example.pdf" */>}}
+{{< pdf url="./path/to/example.pdf" >}}
 
 # Adjust size
-{{</* pdf url="./path/to/example.pdf" width="100%" height="500px" */>}}
+{{< pdf url="./path/to/example.pdf" width="100%" height="500px" >}}
 
 # Adjust zoom level and page
 
-{{</* pdf url="./path/to/example.pdf#view=Fit&page=2" width="100%" height="500px" */>}}
+{{< pdf url="./path/to/example.pdf#view=Fit&page=2" width="100%" height="500px" >}}
 ```
+
+{{< pdf url="./landscape.pdf#view=Fit" width="100%" height="500px" >}} 
 
 You can also add parameters to url to customize PDF viewer.
 | Parameters  | Value  | Description  | Browser  |
@@ -42,3 +50,7 @@ You can also add parameters to url to customize PDF viewer.
 | `zoom`  | `number`  | Zoom by `n%`  | Chrome, FF  |
 | `page`  | `number`  | Select page to render  | Chrome, FF, Safari  |
 | `nameddest`  | `string`  | Anchor position like header | Chrome  |
+
+# Issues
+On mobile webview, this solution does not work. User need to download open
+the pdf them self. 
