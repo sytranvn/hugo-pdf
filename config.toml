@@ -1,5 +1,5 @@
 languageCode = "en-us"
-baseurl = "https://sytranvn.dev/hugo-pdf"
+baseurl = "https://sytranvn.dev/hugo-pdf/"
 title = "Hugo PDF"
 theme = ["hugo-coder", "hugo-pdf"]
 

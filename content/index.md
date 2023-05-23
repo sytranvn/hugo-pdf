@@ -1,5 +1,5 @@
 ---
-weight: 5
+weight: 1
 title: "Hugo PDF"
 git_repo: https://github.com/sytranvn/hugo-pdf
 summary: "This shortcode allows you to add PDF file to your pages using browser native PDF renderer. Therefore, no additional Javascripts needed."
