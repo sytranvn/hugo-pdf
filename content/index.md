@@ -32,30 +32,32 @@ Or use this as a theme.
 # Usage
 
 ## Default
-```
+```md
 {{</* pdf src="./path/to/example.pdf" */>}}
 ```
+
 {{< pdf src="landscape.pdf" >}}
 
 
 ## Customize size
 
-```
+```md
 # Adjust size
 {{</* pdf src="./path/to/example.pdf" width="30%" height="400px" */>}}
-
 ```
+
 {{< pdf src="landscape.pdf" width="40%" height="400px" >}}
 
 
 ## Zoom and page
-```
+```md
 # Adjust zoom level and page
 {{</* pdf src="./path/to/example.pdf#view=Fit&page=1" width="100%" height="500px" */>}}
 ```
 
 {{< pdf src="landscape.pdf#view=Fit" width="100%" height="500px" >}} 
 
+## More options
 You can also add parameters to url to customize PDF viewer.
 | Parameters  | Value  | Description  | Browser  |
 |---|---|---|---|
