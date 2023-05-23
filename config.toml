@@ -1,6 +1,6 @@
 languageCode = "en-us"
-baseurl = "https://docuapi.netlify.com/hugo-pdf"
-title = "DocuAPI Example Site"
+baseurl = "https://sytranvn.dev/hugo-pdf"
+title = "Hugo PDF"
 
 disableKinds = ["taxonomyTerm"]
 
