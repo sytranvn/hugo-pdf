@@ -1,0 +1,44 @@
+baseURL = "https://www.sytranvn.dev/hugo-pdf"
+title = "Hugo PDF"
+theme = "hugo-coder"
+languageCode = "en"
+defaultContentLanguage = "en"
+paginate = 20
+enableEmoji = true
+# Enable Disqus comments
+# disqusShortname = "yourdiscussshortname"
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+author = "Sy Tran Dung"
+# license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
+description = "Hugo PDF shortcode"
+keywords = "blog,developer,personal"
+dateFormat = "January 2, 2006"
+since = 2022
+# Git Commit in Footer, uncomment the line below to enable it
+commit = "https://github.com/sytranvn/hugo-pdf/tree/"
+# Right To Left, shift content direction for languagues such as Arabic
+rtl = false
+# Specify light/dark colorscheme
+# Supported values:
+# "auto" (use preference set by browser)
+# "dark" (dark background, light foreground)
+# "light" (light background, dark foreground) (default)
+colorScheme = "dark"
+# Hide the toggle button, along with the associated vertical divider
+hideColorSchemeToggle = false
+# Series see also post count
+maxSeeAlsoItems = 5
+# Custom CSS
+customCSS = []
+# Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
+customSCSS = []
+
+# Custom JS
+customJS = []
+
+# Custom remote JS files
+customRemoteJS = []
