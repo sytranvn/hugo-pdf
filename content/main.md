@@ -1,4 +1,5 @@
 ---
+weight: 5
 title: "Hugo PDF"
 git_repo: https://github.com/sytranvn/hugo-pdf
 summary: "This shortcode allows you to add PDF file to your pages using browser native PDF renderer. Therefore, no additional Javascripts needed."
@@ -15,32 +16,47 @@ PDF renderer. Therefore, no additional Javascripts needed.
 Copy the only `layouts/shortcodes/pdf.html` file to your `layouts/shortcodes/` website directory and you are good to go.
 
 ## Option 2
-Or use this as a theme.
-- add this to your `config.toml` theme
 ```yml
 theme = "hugo-pdf"
 # use with existing theme
 theme = [current-theme,hugo-pdf]
 ```
-- And clone this repo to your theme directory as submodule.
+
 ```shell
 git submodule add -f --name hugo-pdf https://github.com/sytranvn/hugo-pdf.git themes/hugo-pdf
 ```
 
+Or use this as a theme.
+- Add this to your `config.toml` theme
+- And clone this repo to your theme directory as submodule.
+
 
 # Usage
+
+## Default
 ```
 {{</* pdf src="./path/to/example.pdf" */>}}
+```
+{{< pdf src="landscape.pdf" >}}
 
+
+## Customize size
+
+```
 # Adjust size
-{{</* pdf src="./path/to/example.pdf" width="100%" height="500px" */>}}
+{{</* pdf src="./path/to/example.pdf" width="30%" height="400px" */>}}
 
+```
+{{< pdf src="landscape.pdf" width="40%" height="400px" >}}
+
+
+## Zoom and page
+```
 # Adjust zoom level and page
-
-{{</* pdf src="./path/to/example.pdf#view=Fit&page=2" width="100%" height="500px" */>}}
+{{</* pdf src="./path/to/example.pdf#view=Fit&page=1" width="100%" height="500px" */>}}
 ```
 
-{{< pdf src="landscape.pdf#view=Fit" width="100%" height="500px" >}} 
+{{< pdf src="landscape.pdf#view=Fit" width="50%" height="500px" >}} 
 
 You can also add parameters to url to customize PDF viewer.
 | Parameters  | Value  | Description  | Browser  |
@@ -54,3 +70,8 @@ You can also add parameters to url to customize PDF viewer.
 # Issues
 On mobile webview, this solution does not work. User need to download open
 the pdf them self. 
+
+
+
+
+
