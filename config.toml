@@ -22,9 +22,3 @@ customJS = []
 
 # Custom remote JS files
 customRemoteJS = []
-
-[taxonomies]
-category = "categories"
-series = "series"
-tag = "tags"
-author = "authors"
