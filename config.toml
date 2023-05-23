@@ -1,5 +1,5 @@
 languageCode = "en-us"
-baseurl = "https://sytranvn.dev/"
+baseurl = "https://sytranvn.dev/hugo-pdf"
 title = "Hugo PDF"
 theme = ["hugo-coder", "hugo-pdf"]
 
@@ -7,13 +7,15 @@ theme = ["hugo-coder", "hugo-pdf"]
 [markup.highlight]
 style = "github-dark"
 
-
+[params]
+author = "Sy Tran Dung"
+description = "Hugo PDF"
 colorScheme = "dark"
 hideColorSchemeToggle = true
 # Series see also post count
 maxSeeAlsoItems = 5
 # Custom CSS
-customCSS = []
+customCSS = ["hugo-pdf.css"]
 # Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
 customSCSS = []
 
@@ -22,3 +24,9 @@ customJS = []
 
 # Custom remote JS files
 customRemoteJS = []
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+author = "authors"

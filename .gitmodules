@@ -1,7 +1,7 @@
-[submodule "themes/hugo-coder"]
-	path = themes/hugo-coder
-	url = https://github.com/luizdepra/hugo-coder
 [submodule "themes/hugo-pdf"]
 	path = themes/hugo-pdf
 	url = https://github.com/sytranvn/hugo-pdf
 	branch = master
+[submodule "themes/hugo-coder"]
+	path = themes/hugo-coder
+	url = https://github.com/luizdepra/hugo-coder.git
