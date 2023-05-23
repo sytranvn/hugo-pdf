@@ -8,8 +8,6 @@ theme = ["hugo-coder", "hugo-pdf"]
 style = "github-dark"
 
 [params]
-author = "Sy Tran Dung"
-description = "Hugo PDF"
 colorScheme = "dark"
 hideColorSchemeToggle = true
 # Series see also post count
