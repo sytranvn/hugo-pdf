@@ -1,13 +1,12 @@
 ---
 weight: 5
+anchor: Hugo PDF
 title: "Hugo PDF"
 git_repo: https://github.com/sytranvn/hugo-pdf
 summary: "This shortcode allows you to add PDF file to your pages using browser native PDF renderer. Therefore, no additional Javascripts needed."
-
-
+type: single
 ---
 
-# hugo-pdf
 This shortcode allows you to add PDF file to your pages using browser native 
 PDF renderer. Therefore, no additional Javascripts needed.
 
@@ -56,7 +55,7 @@ Or use this as a theme.
 {{</* pdf src="./path/to/example.pdf#view=Fit&page=1" width="100%" height="500px" */>}}
 ```
 
-{{< pdf src="landscape.pdf#view=Fit" width="50%" height="500px" >}} 
+{{< pdf src="landscape.pdf#view=Fit" width="100%" height="500px" >}} 
 
 You can also add parameters to url to customize PDF viewer.
 | Parameters  | Value  | Description  | Browser  |

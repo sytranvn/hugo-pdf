@@ -56,7 +56,6 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo mod npm install && \
           hugo \
             --gc \
             --minify \

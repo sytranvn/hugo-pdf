@@ -1,66 +1,24 @@
 languageCode = "en-us"
 baseurl = "https://sytranvn.dev/hugo-pdf"
 title = "Hugo PDF"
+theme = ["hugo-coder", "hugo-pdf"]
 
-disableKinds = ["taxonomyTerm"]
 
-# Code higlighting settings
-pygmentsCodefences = true
-pygmentsCodeFencesGuesSsyntax = false
-pygmentsOptions = ""
-pygmentsStyle = "monokai"
-pygmentsUseClasses = false
+[markup.highlight]
+style = "github-dark"
 
-defaultContentLanguage = "en"
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.parser]
-      autoHeadingIDType = "github-ascii"
-    [markup.goldmark.renderer]
-        unsafe = true
+colorScheme = "dark"
+hideColorSchemeToggle = true
+# Series see also post count
+maxSeeAlsoItems = 5
+# Custom CSS
+customCSS = []
+# Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
+customSCSS = []
 
-[module]
-[module.hugoVersion]
-[[module.imports]]
-# This is replaced in go.mod to point to the directory above.
-path="github.com/bep/docuapi/v2"
+# Custom JS
+customJS = []
 
-[params]
-search = true
-maxMenuDepth = 3 # (optional) available options are: 1, 2, or 3 (default: 2)
-  
-# Configure the language example tabs.
-# [[params.language_tabs]]
-# key = "go"
-# name = "Go" 
-# [[params.language_tabs]]
-# key = "shell"
-# name = "Shell" 
-# [[params.language_tabs]]
-# key = "ruby"
-# name = "Ruby"
-# [[params.language_tabs]]
-# key = "python"
-# name = "Python"
-# [[params.language_tabs]]
-# key = "javascript"
-# name = "Javascript"
-
-#Languages 
-[languages]
-
-[languages.en]
-languageName = "English"
-weight = 2
-title = "DocuAPI Example Site"
-
-# Left sidebar footer items. Use HTMl or Markdown.
-toc_footers = [ 
-"Visit my blog at [sytranvn.dev](https://sytranvn.dev)",
-"Documentation Powered by [DocuAPI](https://github.com/bep/docuapi)",
-]
-[languages.en.blackfriday]
-angledQuotes = false
-hrefTargetBlank = true
-
+# Custom remote JS files
+customRemoteJS = []
