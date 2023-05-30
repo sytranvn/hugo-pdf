@@ -4,7 +4,7 @@
     data="{{ $pdf_url }}"
     {{- with .Get "width" }} width="{{ . }}"{{ end -}}
     {{- with .Get "height" }} height="{{ . }}"{{ end -}}
-    type="application/pdf" >
-    <iframe loading="lazy" src="{{ $pdf_url }}"></iframe>
+    type="application/pdf"
+>
+    <p>Unable to display PDF file. <a href="{{ $pdf_url }}">Download</a> instead.</p>
 </object>
-

@@ -1,0 +1,15 @@
+module:
+  noProxy: none
+  noVendor: ""
+  private: '*.*'
+  proxy: direct
+  replacements: ""
+  workspace: "off"
+
+  hugoVersion:
+    extended: false
+    max: ""
+    min: "0.56.0"
+  mounts:
+    - source: layouts
+      target: layouts
