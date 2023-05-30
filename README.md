@@ -1,6 +1,7 @@
 # hugo-pdf
 This shortcode allows you to add PDF file to your pages using browser native 
-PDF renderer. Therefore, no additional Javascripts needed.
+PDF renderer. Therefore, no additional Javascripts like [pdf.js](https://mozilla.github.io/pdf.js/) needed.  
+[Visit demosite](http://sytranvn.dev/hugo-pdf/)
 
 # Installation
 ## Option 1
