@@ -5,8 +5,15 @@ PDF renderer. Therefore, no additional Javascripts like [pdf.js](https://mozilla
 
 # Installation
 ## Option 1
-Copy the only `layouts/shortcodes/pdf.html` file to your `layouts/shortcodes/` website directory and you are good to go.
-
+Use hugo module
+```shell
+hugo mod get github.com/sytranvn/hugo-pdf
+```
+Add import config to `config.toml`
+```
+[[module.imports]]
+path = "github.com/sytranvn/hugo-pdf"
+```
 ## Option 2
 Or use this as a theme.
 - add this to your `config.toml` theme
@@ -20,6 +27,8 @@ theme = [current-theme,hugo-pdf]
 git submodule add -f --name hugo-pdf https://github.com/sytranvn/hugo-pdf.git themes/hugo-pdf
 ```
 
+## Option 3
+Copy the only `layouts/shortcodes/pdf.html` file to your `layouts/shortcodes/` website directory and you are good to go.
 
 # Usage
 ```
