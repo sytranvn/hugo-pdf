@@ -1,3 +1,5 @@
+[![Deploy Hugo site to Pages](https://github.com/sytranvn/hugo-pdf/actions/workflows/hugo.yaml/badge.svg?branch=docs)](https://github.com/sytranvn/hugo-pdf/actions/workflows/hugo.yaml)
+
 # hugo-pdf
 This shortcode allows you to add PDF file to your pages using browser native 
 PDF renderer. Therefore, no additional Javascripts like [pdf.js](https://mozilla.github.io/pdf.js/) needed.  
