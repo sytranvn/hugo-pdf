@@ -1,3 +1,12 @@
+## Opening an Issue
+Before creating an issue, check if you are using the latest version of the project. If you are not up-to-date, see if updating fixes your issue first.
+
+### Reporting Security Issues
+Review our Security Policy. Do not file a public issue for security vulnerabilities.
+
+### Bug Reports and Other Issues
+A great way to contribute to the project is to send a detailed issue when you encounter a problem. We always appreciate a well-written, thorough bug report. ✌️
+
 ## Code Contribution
 
 Any new functionality must:
