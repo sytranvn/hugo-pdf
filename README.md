@@ -55,4 +55,9 @@ You can also add parameters to url to customize PDF viewer.
 
 # Issues
 On mobile webview, this solution does not work. User need to download open
-the pdf them self. 
+the pdf them self.  
+Report [bugs and other issues](https://github.com/sytranvn/hugo-pdf/issues).
+
+# Contributing
+
+Please checkout [CONTRIBUTING.md](https://github.com/sytranvn/hugo-pdf/blob/master/CONTRIBUTING.md)
